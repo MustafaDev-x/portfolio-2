@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Regular.ttf") format("truetype"), local("Tajawal");
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.post {
+  border: 1px solid #ccc;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background: #fff;
+  border-radius: 13px;
+}
+
+.card1:hover {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+}
+.date1 {
+  display: flex;
+}
+/* .detail1 {
+  background-color: #f2f2f2;
+} */
+
+/* @media (min-width: 768px).col-md-3 {
+  max-width: 100%;
+} */
+
+p {
+  word-wrap: break-word;
+}
+.navvarhome {
+  background-color: transparent;
+}
+.home {
+  /* background-image: url("../images/home.png"); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../images/home.jpeg");
+  /* background-image: url("../images/home.jpeg"); */
+
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #f8f9fa;
+  /* font-size: 14pt; */
+}
+
+.nav-item .nav-link :active {
+  color: #fff;
+  /* font-size: 14pt; */
+}
+
+.navbar-nav .nav-item .nav-link a:hover {
+  color: #ccc;
+}
+.name {
+  /* font-family: sans-serif;
+  font-weight: bold;
+  font-size: 80px; */
+  color: #ffffff;
+}
+.name2 {
+  /* font-family: sans-serif;
+
+  font-size: 38px; */
+  color: #ffffff;
+}
+.aboutme {
+  text-align: justify;
+  margin-top: 90px;
+  margin-right: 40px;
+}
+h1 {
+  font-size: 63pt;
+  margin-left: 40px;
+  align-content: right;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  h1 {
+    font-size: 110pt;
+  }
+}
+h2 {
+  font-size: 40pt;
+  margin-left: 40px;
+  align-content: right;
+  font-weight: 300;
+}
+
+.name {
+  margin-top: 9%;
+}
+@media only screen and (max-width: 480px) {
+  .name {
+    margin-top: 30%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 768px) {
+  .name {
+    margin-top: 30%;
+  }
+  h1 {
+    font-size: 110pt;
+  }
+}
+a:hover {
+  color: #333;
+}
+
+.title-1 {
+  font-size: 35pt;
+  color: #4f4f4f;
+}
+input[type="text"] {
+  background: #e9ecef;
+  border-radius: 13px;
+}
+input[type="email"] {
+  background: #e9ecef;
+  border-radius: 13px;
+}
+.form-control {
+  background: #e9ecef;
+  border-radius: 13px;
+}
+
+.footerst {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../images/home.jpeg");
+
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+.textfot {
+  height: 100%;
+}
+a {
+  color: #fff;
+}
+a :hover {
+  color: #ccc;
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+
+.containerimg {
+  position: relative;
+  
+}
+
+.imagec {
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000045;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  border-radius: 4px;
+}
+
+.containerimg:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
